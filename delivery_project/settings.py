@@ -25,7 +25,7 @@ SECRET_KEY = 'n^38$$=hc3zh2ogt%0%b!3g2z#c@igkm=7r7+sdkyc0ote&hi2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition

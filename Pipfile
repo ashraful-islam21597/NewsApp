@@ -6,10 +6,12 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-django = "==3.0.1"
+django = "==2.0.1"
+python-decouple = "*"
 django-heroku = "*"
+cloudinary = "*"
 gunicorn = "*"
-bd = "*"
+django-crispy-forms = "==1.7.2"
 
 [requires]
 python_version = "3.9"

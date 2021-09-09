@@ -1,0 +1,19 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="article-entry">
+    <h2>{{ object.title }}</h2>
+    <p>{{ object.author.Fullname }} | {{ object.date }}</p>
+    {% if object.picture %}
+    <img style="height: 150px;width:250px;margin:25px;" src="{{ object.picture.url }}">
+    {% endif %}
+    <p>{{ object.body }}</p>
+
+</div>
+
+    <p><a href="{% url 'article_edit' article.pk %}">Edit</a> |
+        <a href="{% url 'article_delete' article.pk %}">Delete</a></p>
+    <p>Back to <a href="{% url 'article_list' %}">All Articles</a>.</p>
+
+{% endblock content %}

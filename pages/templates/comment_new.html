@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="article-entry">
+        <h2>{{ obj.title }}</h2>
+        <p>by {{ obj.author.Fullname }} | {{ obj.date }}</p>
+        {% if obj.picture %}
+            <img style="height: 150px;width:250px;margin:25px;" src="{{ obj.picture.url }}">
+        {% endif %}
+        <p>{{ obj.body }}</p>
+
+    </div>
+    <hr>
+        <h2>Write comment</h2>
+
+        <form action="" method="post"  enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <button class="btn btn-success ml-1" type="submit">Save</button>
+        </form>
+
+{% endblock content %}
+
+
+
+{#    <div class="card">#}
+{#        <div class="card-header">#}
+{#            <span class="font-weight-bold">{{ obj.title }}</span> &middot;#}
+{#            <span class="text-muted">by {{ obj.author }} |#}
+{#                {{ obj.date }}</span>#}
+{#        </div>#}
+{#        <div  class="card-body">#}
+{#            {% if obj.picture %}#}
+                {#        <img style="height: 150px;width:250px;float: left;clear: right;margin:25px;" src="{{ article.picture.url }}">#}
+{#            {% endif %}#}
+{#            {{ obj.body }}#}
+{#        </div>#}
+{#    </div>#}
+{#    <h1>Write Comment</h1>#}
+{##}
+{##}
+{##}
+

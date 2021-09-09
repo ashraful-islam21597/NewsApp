@@ -1,1 +1,1 @@
-web: gunicorn delivery_project.wsgi
+web: gunicorn Newsapp.wsgi

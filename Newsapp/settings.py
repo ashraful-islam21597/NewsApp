@@ -113,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-MEDIA_ROOT = 'C:\\Users\\USER\\Desktop\\NEWS\\media'
+MEDIA_ROOT = 'C:\\Users\\USER\\Desktop\\NEWS\\delivery-software-project\\media'
 MEDIA_URL = '/media/'
 
 # Internationalization
